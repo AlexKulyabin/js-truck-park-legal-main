@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Information - JS Truck Park</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-color: #1d1d1f;
+            --bg-color: #f5f5f7;
+            --card-bg: #ffffff;
+            --border-color: #d2d2d7;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 700; }
+        h2 { font-size: 1.5rem; margin-top: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+        h3 { font-size: 1.2rem; margin-top: 20px; color: #333; }
+
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+        }
+
+        .nav-tabs a {
+            text-decoration: none;
+            color: var(--text-color);
+            background: var(--card-bg);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .nav-tabs a:hover { background: var(--primary-color); color: white; border-color: var(--primary-color); }
+
+        .content-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #86868b;
+            padding-bottom: 40px;
+        }
+
+        .contact-box {
+            background: #f0f7ff;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-color);
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .content-card { padding: 20px; border-radius: 0; }
+            h1 { font-size: 1.8rem; }
+            .nav-tabs { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>JS Truck Park</h1>
+        <p>Legal Documentation</p>
+    </header>
+
+    <div class="nav-tabs">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms & Conditions</a>
+    </div>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy" class="content-card">
+        <h2>Privacy Policy</h2>
+        <p>This privacy policy applies to the JS Truck Park mobile application (hereinafter referred to as the "Application"), created by <strong>JS TRUCK PARK</strong> (hereinafter referred to as the "Service Provider") as a commercial service. This service is provided "as is".</p>
+
+        <h3>Information Collection and Use</h3>
+        <p>The Application collects information when you download and use it. This information may include, but is not limited to:</p>
+        <ul>
+            <li>Your device's Internet Protocol address (IP address).</li>
+            <li>The pages of the Application that you visit, the time and date of your visit, and the time spent on those pages.</li>
+            <li>The time spent completing requests/applications.</li>
+            <li>The operating system used on your mobile device.</li>
+        </ul>
+
+        <h3>Location Data</h3>
+        <p>The Application collects location data to help the Service Provider determine your approximate geographic location, used in the following ways:</p>
+        <ul>
+            <li><strong>Geolocation Services:</strong> To provide features such as personalized content, relevant recommendations, and location-based services.</li>
+            <li><strong>Analytics and Improvements:</strong> Aggregated and anonymized data helps analyze user behavior and improve app performance.</li>
+            <li><strong>Third-Party Services:</strong> Periodically, anonymized location data may be shared with external services to optimize offerings.</li>
+        </ul>
+
+        <h3>Personal Information</h3>
+        <p>To enhance the Application, the Service Provider may require you to provide certain personally identifiable information, including but not limited to your <strong>Phone Number and Name</strong>. This information will be stored and used in accordance with this policy.</p>
+
+        <h3>Third-Party Access</h3>
+        <p>Only aggregated, anonymized data is periodically transmitted to external services. The Application uses the following third-party services with their own privacy policies:</p>
+        <ul>
+            <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Analytics for Firebase</a></li>
+        </ul>
+
+        <h3>Data Retention Policy</h3>
+        <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you wish to delete your data, please contact us at <a href="mailto:truckparkapp@gmail.com">truckparkapp@gmail.com</a>.</p>
+
+        <h3>Children</h3>
+        <p>The Application is not intended for children under the age of 13. The Service Provider does not knowingly collect data from children under 13. If discovered, such data will be immediately deleted.</p>
+
+        <h3>Security</h3>
+        <p>We provide physical, electronic, and procedural safeguards to protect the information we process and maintain.</p>
+
+        <h3>Changes</h3>
+        <p>This Privacy Policy may be updated periodically. We will notify you of any changes by posting the new version on this page. Effective date: <strong>February 9, 2026</strong>.</p>
+
+        <div class="contact-box">
+            <strong>Contact Us:</strong><br>
+            If you have any questions, contact us via email: <a href="mailto:truckparkapp@gmail.com">truckparkapp@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Terms and Conditions Section -->
+    <section id="terms" class="content-card">
+        <h2>Terms & Conditions</h2>
+        <p>These terms apply to the JS Truck Park mobile application (the "Application") created by <strong>JS TRUCK PARK</strong> (the "Service Provider").</p>
+        
+        <p>By downloading or using the Application, you automatically agree to these terms. Please read them carefully before use.</p>
+
+        <h3>Intellectual Property</h3>
+        <p>Unauthorized copying or modification of the Application, any part of it, or our trademarks is strictly prohibited. You may not attempt to extract the source code, translate the app into other languages, or create derivative versions. All trademarks and copyrights remain the property of the Service Provider.</p>
+
+        <h3>Security and Device Responsibility</h3>
+        <p>You are responsible for maintaining the security of your phone and access to the Application. We strongly advise against "jailbreaking" or "rooting" your device, as it may compromise security features and lead to the Application not functioning correctly.</p>
+
+        <h3>Internet and Data Charges</h3>
+        <p>Certain functions require an active internet connection. The Service Provider is not responsible for the Application's inability to function if you lack access to Wi-Fi or have exceeded your data limit. You are responsible for any charges from your mobile provider, including roaming fees.</p>
+
+        <h3>Limitation of Liability</h3>
+        <p>While we strive to keep the Application accurate and up to date, we rely on information provided by third parties. The Service Provider accepts no liability for any direct or indirect loss you experience as a result of relying on the Application's functionality.</p>
+
+        <h3>Termination</h3>
+        <p>The Service Provider may terminate the provision of the Application at any time without notice. Upon termination: (a) all rights and licenses granted to you will end; (b) you must stop using the app and delete it from your device.</p>
+
+        <h3>Changes to Terms</h3>
+        <p>We may update our Terms and Conditions periodically. You are advised to review this page regularly for changes. Effective date: <strong>February 9, 2026</strong>.</p>
+
+        <div class="contact-box">
+            <strong>Questions?</strong><br>
+            Feel free to contact the Service Provider at: <a href="mailto:truckparkapp@gmail.com">truckparkapp@gmail.com</a>
+        </div>
+    </section>
+
+    <div class="footer">
+        &copy; 2026 JS TRUCK PARK. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>

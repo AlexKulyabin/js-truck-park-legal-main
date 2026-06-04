@@ -1,0 +1,22 @@
+<script>
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Читаем, на какую страницу нужно перейти (по умолчанию homePage)
+        const route = urlParams.get('route') || 'homePage';
+        
+        // Убираем параметр route из строки, чтобы не дублировать его в приложении
+        urlParams.delete('route');
+        const params = urlParams.toString();
+
+        // Формируем ссылку для приложения
+        // Пример: jstrackpark://js-truck-park.web.app/photoDetailed?photoUrl=...
+        const appLink = `jstrackpark://js-truck-park.web.app/${route}?${params}`;
+
+        window.location.href = appLink;
+
+        setTimeout(function() {
+            window.location.href = "https://js-truck-park.web.app/support.html";
+        }, 2500);
+    };
+</script>
