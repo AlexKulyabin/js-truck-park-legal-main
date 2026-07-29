@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Track Park</title>
-    
-    <!-- Мета-теги для красивого превью в мессенджерах -->
-    <meta property="og:title" content="JS Track Park" />
-    <meta property="og:description" content="Посмотри информацию в приложении JS Track Park" />
+
+    <!-- Мета-теги для красивого превью в мессенджерах (Telegram, WhatsApp) -->
+    <meta property="og:title" content="Join JS Track Park Beta" />
+    <meta property="og:description" content="Присоединяйтесь к тестированию приложения для водителей. Нажмите, чтобы открыть или скачать." />
     <meta property="og:image" content="https://js-truck-park.web.app/assets/logo.png" />
 
     <script>
@@ -17,26 +17,26 @@
             const route = urlParams.get('route') || 'homePage';
             const queryString = window.location.search;
 
-            // 2. Пытаемся открыть приложение через кастомную схему
-            // Это сработает, если приложение УЖЕ установлено
+            // 2. Пытаемся открыть приложение через кастомную схему (План Б)
+            // Это сработает мгновенно, если приложение уже установлено
             const appLink = `jstrackpark://js-truck-park.web.app/${route}${queryString}`;
             window.location.href = appLink;
 
             // 3. Таймер для тех, у кого приложения НЕТ
-            // Если через 2.5 секунды мы всё еще в браузере - делаем редирект в стор
+            // Если через 2.5 секунды страница не закрылась - делаем редирект в стор
             setTimeout(function() {
                 const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-                
-                // Ссылки на магазины
-                const playStoreUrl = "https://play.google.com/store/apps/details?id=com.mycompany.jstrackpark";
-                const appStoreUrl = "https://apps.apple.com/app/idYOUR_APP_ID"; // Замените на реальный ID когда он будет
+
+                // ВАШИ АКТУАЛЬНЫЕ ССЫЛКИ ДЛЯ ТЕСТИРОВАНИЯ
+                const playStoreUrl = "https://play.google.com/apps/internaltest/4700834483016114277";
+                const appStoreUrl = "https://testflight.apple.com/join/7FuD2cVA";
                 const webFallback = "https://js-truck-park.web.app/support.html";
 
                 if (/android/i.test(userAgent)) {
-                    // Если это Android - в Google Play
+                    // Если это Android - в Google Play (Internal Test)
                     window.location.href = playStoreUrl;
                 } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                    // Если это iOS - в App Store
+                    // Если это iOS - в TestFlight
                     window.location.href = appStoreUrl;
                 } else {
                     // Если зашли с компьютера - на страницу поддержки
@@ -46,12 +46,12 @@
         };
     </script>
 </head>
-<body style="text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding-top: 100px; color: #333;">
-    
+<body style="text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding-top: 100px; color: #333; background-color: #ffffff;">
+
     <div id="loader">
         <h2 style="font-weight: 600;">Redirecting to JS Track Park...</h2>
         <div style="margin: 30px auto; width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid #1E88E5; border-radius: 50%; animation: spin 1s linear infinite;"></div>
-        <p style="color: #666;">If you don't have the app, you will be redirected to the store.</p>
+        <p style="color: #666;">If you don't have the app installed, <br>you will be redirected to the store.</p>
     </div>
 
     <style>
