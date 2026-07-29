@@ -27,16 +27,16 @@
             setTimeout(function() {
                 const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-                // ВАШИ АКТУАЛЬНЫЕ ССЫЛКИ ДЛЯ ТЕСТИРОВАНИЯ
-                const playStoreUrl = "https://play.google.com/apps/internaltest/4700834483016114277";
-                const appStoreUrl = "https://testflight.apple.com/join/7FuD2cVA";
+                // Опубликованные страницы приложения в магазинах
+                const playStoreUrl = "https://play.google.com/store/apps/details?id=com.mycompany.jstrackpark";
+                const appStoreUrl = "https://apps.apple.com/app/id6773738276";
                 const webFallback = "https://js-truck-park.web.app/support.html";
 
                 if (/android/i.test(userAgent)) {
-                    // Если это Android - в Google Play (Internal Test)
+                    // Если это Android - в Google Play
                     window.location.href = playStoreUrl;
                 } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                    // Если это iOS - в TestFlight
+                    // Если это iOS - в App Store
                     window.location.href = appStoreUrl;
                 } else {
                     // Если зашли с компьютера - на страницу поддержки

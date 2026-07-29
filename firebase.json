@@ -11,5 +11,10 @@
         "destination": "/index.html"
       }
     ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 55007
+    }
   }
 }
